@@ -9,8 +9,8 @@ const translate = document.querySelector('#translater');
 
 
 // Imagenes de los iconos
-let moon = '/public/FamiconsMoon.svg';
-let light = '/public/IconoirSunLight.svg';
+let moon = 'public/FamiconsMoon.svg';
+let light = 'public/IconoirSunLight.svg';
 let icon = localStorage.getItem('url');
 
 load();
@@ -83,11 +83,11 @@ toggle.addEventListener('click', () => {
     store(body.classList.contains('darkmode'));
     if (url == light) {
         toggle.src = moon;
-        storeImage('/public/FamiconsMoon.svg');
+        storeImage('public/FamiconsMoon.svg');
     }
     if (url == moon) {
         toggle.src = light
-        storeImage('/public/IconoirSunLight.svg');
+        storeImage('public/IconoirSunLight.svg');
     }
 })
 

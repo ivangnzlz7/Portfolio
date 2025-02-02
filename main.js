@@ -9,8 +9,8 @@ const translate = document.querySelector('#translater');
 
 
 // Imagenes de los iconos
-let moon = '/public/FamiconsMoon.svg';
-let light = '/public/IconoirSunLight.svg';
+let moon = 'public/FamiconsMoon.svg';
+let light = 'public/IconoirSunLight.svg';
 let icon = localStorage.getItem('url');
 
 load();
@@ -77,17 +77,17 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 
 toggle.addEventListener('click', () => {
-    const url = localStorage.getItem('url') || toggle.src.slice(21)
-
+    const url = localStorage.getItem('url') || toggle.src
     body.classList.toggle('darkmode');
     store(body.classList.contains('darkmode'));
-    if (url == light) {
+
+    if (url.includes('IconoirSunLight.svg')) {
         toggle.src = moon;
-        storeImage('/public/FamiconsMoon.svg');
+        storeImage('public/FamiconsMoon.svg');
     }
-    if (url == moon) {
+    if (url.includes('FamiconsMoon.svg')) {
         toggle.src = light
-        storeImage('/public/IconoirSunLight.svg');
+        storeImage('public/IconoirSunLight.svg');
     }
 })
 

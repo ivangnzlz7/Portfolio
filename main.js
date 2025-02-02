@@ -73,8 +73,6 @@ window.addEventListener('scroll', handleScroll);
 
 
 window.addEventListener('DOMContentLoaded', () => {
-    console.log(toggle.src);
-    
     toggle.src = icon == moon ? moon : light;
 })
 

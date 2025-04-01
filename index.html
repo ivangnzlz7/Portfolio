@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Presentacion de mi portfolio como desarrollador fullstack">
+    <meta name="keywords" content="HTML, CSS, Javascript, Portfolio, Desarrollador">
     <title>Portfolio - Javier Gonzalez</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,8 +30,8 @@
         <section class="me">
             <img src="public/perfil.jpg" alt="perfil" id="perfil">
             <section>
-                <h1>Ivan javier gonzalez</h1>
-                <p data-key="job">Desarrollador fullstack web</p>
+                <h1>Javier Gonzalez</h1>
+                <p data-key="job" class="colors">Desarrollador fullstack web</p>
             </section>
         </section>
         <hr id="me">
@@ -38,10 +40,12 @@
                 <img src="public/VsProfile.svg" alt="profile">
                 <h2 data-key="me">Sobre Mi</h2>
             </section>
-            <p data-key="description">Desarrollador fullstack, cuento con 
-                proyectos en donde uso todo lo aprendido, 
-                asi mismo continuando un aprendizaje de 
-                manera eficiente y buenas practicas a lo largo del camino como desarrollador</p>
+            <p data-key="description" class="colors">Me gusta la creacion de 
+                aplicaciones y desarrollo web. Un estudiante entusiasta con 
+                aprender siempre algo nuevo que desafie mi capacidad. 
+                Cuento con proyectos en donde uso lo aprendido en los cursos, 
+                documentacion etc. De modo que tenga buenas practicas y de manera
+                eficiente a lo largo del camino como desarrollador</p>
         </section>
         <hr>
         <section class="skills">
@@ -50,7 +54,7 @@
                 <h2 title="skills" data-key="skills">Habilidades Tecnicas</h2>
             </article>
             <section class="front hidden left">
-                <h2>Frontend:</h2>
+                <h2 class="colors">Frontend:</h2>
                 <div class="icons">
                     <img src="public/skills/SkillIconsHtml.svg" alt="html" title="HTML">
                     <img src="public/skills/SkillIconsCss.svg" alt="css" title="CSS">
@@ -65,12 +69,12 @@
                     <img src="public/skills/LogosNodejsIcon.svg" alt="node" title="NODEJS">
                     <img src="public/skills/LogosJavascript.svg" alt="javascript" title="JAVASCRIPT">
                     <img src="public/skills/LogosPython.svg" alt="python" title="PYTHON">
-                    <img src="public/skills/LogosExpress.svg" alt="express" title="EXPRESS">
-                    <img src="public/skills/CibFlask.svg" alt="flask" title="FLASK">
+                    <img src="public/skills/SimpleIconsExpress.svg" alt="express" title="EXPRESS">
+                    <img src="public/skills/FileIconsFlask.svg" alt="flask" title="FLASK">
                 </div>
             </section>
             <section class="db hidden left">
-                <h2 data-key="databases">Bases De Datos:</h2>
+                <h2 data-key="databases" class="colors">Bases De Datos:</h2>
                 <div class="icons">
                     <img src="public/skills/SkillIconsMongodb.svg" alt="mongodb" title="MONGODB">
                     <img src="public/skills/LogosMysql.svg" alt="mysql" title="MYSQL">
@@ -115,56 +119,61 @@
                 <img src="public/TdesignAssignmentFilled.svg" alt="projects">
                 <h2 data-key="projects">Proyectos</h2>
             </section>
-            <section>
+            <section class="cards">
                 <article class="projects hidden left">
                     <img src="public/project.png" alt="proyecto" id="project">
-                    <h3 data-key="project">Administracion Veterinaria</h3>
-                    <p data-key="project-description">App de veterinaria donde
-                        puede gestionar los pacientes 
-                        contando con registro, login
-                        y recuperacion de clave</p>
-                    <div class="languages">
-                        <img src="public/skills/LogosNodejsIcon.svg" alt="node" title="NODE">
-                        <img src="public/skills/LogosReact.svg" alt="react" title="REACT">
-                        <img src="public/skills/LogosTailwindcssIcon.svg" alt="talwind" title="TAILWIND">
-                        <img src="public/skills/SkillIconsMongodb.svg" alt="mongodb" title="MONGODB">
-                        <img src="public/skills/LogosExpress.svg" alt="express" title="EXPRESS">
-                    </div>
-                    <div class="code">
-                        <div>
-                            <img src="public/skills/UiwGithub.svg" alt="github">
-                            <p><a href="#" data-key="project-github">Codigo</a></p>
+                    <div class="projects-code">
+                        <h3 data-key="project">Administracion Veterinaria</h3>
+                        <p data-key="project-description" class="colors">App de veterinaria donde
+                            puede gestionar los pacientes 
+                            contando con registro, login
+                            y recuperacion de clave</p>
+                        <div class="languages">
+                            <img src="public/skills/LogosNodejsIcon.svg" alt="node" title="NODE">
+                            <img src="public/skills/LogosReact.svg" alt="react" title="REACT">
+                            <img src="public/skills/LogosTailwindcssIcon.svg" alt="talwind" title="TAILWIND">
+                            <img src="public/skills/SkillIconsMongodb.svg" alt="mongodb" title="MONGODB">
+                            <img src="public/skills/SimpleIconsExpress.svg" alt="express" title="EXPRESS">
                         </div>
-                        <div>
-                            <img src="public/LucideSquareArrowOutUpRight.svg" alt="demo">
-                            <p><a href="#">Demo</a></p>
+                        <div class="code">
+                            <div>
+                                <img src="public/skills/UiwGithub.svg" alt="github">
+                                <p><a href="#" data-key="project-github">Codigo</a></p>
+                            </div>
+                            <div>
+                                <img src="public/LucideSquareArrowOutUpRight.svg" alt="demo">
+                                <p><a href="#">Demo</a></p>
+                            </div>
                         </div>
                     </div>
                 </article>
                 <article class="projects hidden right">
                     <img src="public/project2.png" alt="proyecto" id="project">
-                    <h3>Blog</h3>
-                    <p data-key="project2-description">App de blog con registro, login y recuperacion de clave</p>
-                    <div class="languages">
-                        <img src="public/skills/LogosJavascript.svg" alt="javascript" title="JAVASCRIPT">
-                        <img src="public/skills/CibFlask.svg" alt="flask" title="FLASK">
-                        <img src="public/skills/SkillIconsCss.svg" alt="css" title="CSS">
-                        <img src="public/skills/LogosMysql.svg" alt="mysql" title="MYSQL">
+                    <div class="projects-code">
+                        <h3>Blog</h3>
+                        <p data-key="project2-description" class="colors">App de blog con registro, login y recuperacion de clave</p>
+                        <div class="languages">
+                            <img src="public/skills/LogosJavascript.svg" alt="javascript" title="JAVASCRIPT">
+                            <img src="public/skills/FileIconsFlask.svg" alt="flask" title="FLASK">
+                            <img src="public/skills/SkillIconsCss.svg" alt="css" title="CSS">
+                            <img src="public/skills/LogosMysql.svg" alt="mysql" title="MYSQL">
+                        </div>
+                        <div class="code">
+                            <div>
+                                <img src="public/skills/UiwGithub.svg" alt="github">
+                                <p><a href="#" data-key="project-github">Codigo</a></p>
+                            </div>
+                            <div>
+                                <img src="public/LucideSquareArrowOutUpRight.svg" alt="demo">
+                                <p><a href="#">Demo</a></p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="code">
-                        <div>
-                            <img src="public/skills/UiwGithub.svg" alt="github">
-                            <p><a href="#" data-key="project-github">Codigo</a></p>
-                        </div>
-                        <div>
-                            <img src="public/LucideSquareArrowOutUpRight.svg" alt="demo">
-                            <p><a href="#">Demo</a></p>
-                        </div>
                 </article>
                 <article class="projects hidden left">
                     <img src="public/project3.png" alt="proyecto" id="project">
                     <h3 data-key="project3">App de clima</h3>
-                    <p data-key="project3-description">Busca la temperatura del pais con su pais y capital</p>
+                    <p data-key="project3-description" class="colors">Busca la temperatura del pais con su pais y capital</p>
                     <div class="languages">
                         <img src="public/skills/LogosJavascript.svg" alt="javascript" title="JAVASCRIPT">
                         <img src="public/skills/SkillIconsCss.svg" alt="css" title="CSS">
@@ -179,11 +188,12 @@
                             <img src="public/LucideSquareArrowOutUpRight.svg" alt="demo">
                             <p><a href="#">Demo</a></p>
                         </div>
+                    </div>
                 </article>
                 <article class="projects hidden right">
                     <img src="public/project4.png" alt="proyecto" id="project">
                     <h3>Landing page</h3>
-                    <p data-key="project4-description">Convertir a los visitantes en clientes mediante compaña de marketing o publicidad</p>
+                    <p data-key="project4-description" class="colors">Convertir a los visitantes en clientes mediante compaña de marketing o publicidad</p>
                     <div class="languages">
                         <img src="public/skills/LogosJavascript.svg" alt="javascript" title="JAVASCRIPT">
                         <img src="public/skills/SkillIconsCss.svg" alt="css" title="CSS">
@@ -198,6 +208,7 @@
                             <img src="public/LucideSquareArrowOutUpRight.svg" alt="demo">
                             <p><a href="#">Demo</a></p>
                         </div>
+                    </div>
                 </article>
             </section>
         </section>
@@ -211,7 +222,7 @@
                 <div class="certificate">
                     <img src="public/MaterialSymbolsLightCircle.svg" alt="punto" id="circle">
                     <div class="hidden left">
-                        <em data-key="date">2023 - Febrero</em>
+                        <em data-key="date" class="colors">2023 - Febrero</em>
                         <h3 data-key="course">Ticmas - Primeros pasos del desarrollo frontend</h3>
                     </div>
                     <img src="public/certificates/ticmas2.png" alt="python" id="ticmas" class="hidden right">
@@ -219,7 +230,7 @@
                 <div class="certificate">
                     <img src="public/MaterialSymbolsLightCircle.svg" alt="punto" id="circle">
                     <div class="hidden left">
-                        <em data-key="data2">2023 - Agosto</em>
+                        <em data-key="data2" class="colors">2023 - Agosto</em>
                         <h3 data-key="course2">Ticmas - Procesamiento de datos con python</h3>
                     </div>
                     <img src="public/certificates/ticmas.png" alt="python" id="ticmas" class="hidden right">
@@ -227,7 +238,7 @@
                 <div class="certificate">
                     <img src="public/MaterialSymbolsLightCircle.svg" alt="punto" id="circle">
                     <div class="hidden left">
-                        <em data-key="data3">2024 - Febrero</em>
+                        <em data-key="data3" class="colors">2024 - Febrero</em>
                         <h3>Codo a Codo - Full Stack Python</h3>
                     </div>
                     <img src="public/certificates/codoAcodo2.png" alt="python" id="ticmas" class="hidden right">
@@ -235,7 +246,7 @@
                 <div class="certificate">
                     <img src="public/MaterialSymbolsLightCircle.svg" alt="punto" id="circle">
                     <div class="hidden left">
-                        <em data-key="date4">2024 - Septiembre</em>
+                        <em data-key="date4" class="colors">2024 - Septiembre</em>
                         <h3>Talent Tech - Front-End JS</h3>
                     </div>
                     <img src="public/certificates/codoAcodo.png" alt="python" id="ticmas" class="hidden right">

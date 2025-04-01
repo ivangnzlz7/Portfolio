@@ -1,3 +1,7 @@
+:root {
+  --color-noche: rgb(129, 150, 255);
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -8,7 +12,7 @@ html {
 }
 
 body {
-  background-color: rgb(155, 107, 245);
+  background-color: rgb(31, 77, 138);
   font-family: "prompt", serif;
   overflow-x: hidden;
   transition: all 0.6s;
@@ -28,7 +32,7 @@ header {
 
 ::-webkit-scrollbar {
   width: 12px;
-  height: 20x;
+  height: 26x;
 }
 
 ::-webkit-scrollbar-track {
@@ -36,7 +40,7 @@ header {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(147, 42, 245);
+  background-color: rgb(0, 2, 141);
   border-radius: 4px;
 }
 
@@ -54,7 +58,7 @@ main hr {
 }
 
 .navegacion {
-  outline: 2px solid rgb(73, 73, 73);
+  outline: 2px solid rgb(153, 153, 153);
   border-radius: 18px;
   padding: 10px 0;
 }
@@ -90,22 +94,22 @@ main hr {
   transition: color 0.5s ease-in-out, font-size 0.5s ease-in-out;
 }
 
-.navegacion a:hover,
-.navegacion p:hover {
-  color: rgb(73, 73, 73);
+.navegacion a:hover {
+  color: rgb(153, 153, 153);
 }
 
 .me {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-top: 80px;
+  column-gap: 50px;
 }
 
 #perfil {
   width: 18%;
   height: 14%;
-  outline: 1px solid white;
-  border-radius: 6%;
+  outline: 2px solid white;
+  border-radius: 10%;
 }
 
 .me section {
@@ -118,7 +122,7 @@ main hr {
 }
 
 .me section p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: white;
   white-space: nowrap;
   overflow: hidden;
@@ -160,12 +164,9 @@ main hr {
   background-color: black;
 }
 
-.darkmode .me section p,
 .darkmode .me section h1,
 .darkmode .profile h2,
-.darkmode .info p,
 .darkmode .skills article h2,
-.darkmode .skills section h2,
 .darkmode .project section > h2,
 .darkmode .certificate div,
 .darkmode .certificate div h3,
@@ -173,15 +174,17 @@ main hr {
 .darkmode footer h3,
 .darkmode .navegacion a,
 .darkmode header p {
-  color: rgb(73, 73, 73);
+  color: #E0E0E0;
 }
 
+.darkmode .colors,
 .darkmode .navegacion a:hover {
-  color: white;
-}
+  color: var(--color-noche);
+} 
+
 
 .darkmode .projects {
-  color: rgb(73, 73, 73);
+  color: #E0E0E0;
   box-shadow: 5px 5px 10px rgb(73, 73, 73);
 }
 
@@ -194,7 +197,7 @@ main hr {
 }
 
 .darkmode .skills .soft div p {
-  color: white;
+  color: #E0E0E0;
 }
 
 .profile {
@@ -216,7 +219,7 @@ main hr {
   color: white;
   font-size: 1.8rem;
   max-width: 72%;
-  margin: 20px auto;
+  margin: 40px auto;
   line-height: 1.4;
 }
 
@@ -241,23 +244,11 @@ main hr {
   margin-top: 60px;
 }
 
-.front h2 {
-  text-decoration: underline;
-  font-size: 1.8rem;
-}
-
-.back h2 {
-  text-decoration: underline;
-  font-size: 1.8rem;
-}
-
-.db h2 {
-  text-decoration: underline;
-  font-size: 1.8rem;
-}
-
+.front h2, 
+.db h2,
+.back h2, 
 .tools h2 {
-  text-decoration: underline;
+  text-decoration: none;
   font-size: 1.8rem;
 }
 
@@ -333,19 +324,29 @@ main hr {
   font-size: 2.6rem;
 }
 
-.project section:last-child {
+.project .cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   justify-content: space-between;
-  gap: 84px;
+  gap: 86px;
   margin-top: 80px;
+}
+
+.cards .projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.projects-code {
+  margin-bottom: 0;
 }
 
 #project {
   width: 100%;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  height: 200px;
+  height: 100%;
 }
 
 .projects {
@@ -390,12 +391,12 @@ main hr {
 
 .code > div p a {
   text-decoration: none;
-  color: rgb(73, 73, 73);
+  color: rgb(153, 153, 153);
   transition: color 0.3s ease-in;
 }
 
 .code p a:hover {
-  color: rgb(119, 116, 116);
+  color: rgb(202, 199, 199);
 }
 
 .languages img {
@@ -447,6 +448,10 @@ main hr {
 .certificate div h3 {
   color: white;
   font-size: 1.8rem;
+}
+
+.hidden em {
+  color: white
 }
 
 #ticmas {
@@ -598,7 +603,7 @@ footer h3 {
     z-index: 232323;
     top: 0;
     left: 0;
-    background-color: #412372;
+    background-color: #03197e;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
